@@ -119,7 +119,6 @@ function textDisp(pageobj) {
   dbOpen().onsuccess = function () {
     var sideadjustment = 0.9;
     var verticaladjustment = 0.9;
-    var avg = 0;
     //クライアントDB接続、展開
     let table = readTransaction(event.target.result, pageobj.maindata).objectStore(pageobj.maindata);
     table.openCursor().onsuccess = function (event) {
@@ -130,7 +129,7 @@ function textDisp(pageobj) {
           $("#text").append('<div id="' + id + '" name="textlist" class="text_btn"  onclick="textClick(\'' + pageobj.maindata + '\',\'' + id + '\', \'' + data.value.itemid + '\')">' + data.value.name + '</div>');
           $("#" + id).css('left', data.value.side * sideadjustment + '%');
           $("#" + id).css('bottom', data.value.vertical * verticaladjustment + '%');
-          avg = (Number(data.value.side) + Number(data.value.vertical)) / 2;
+          var avg = (Number(data.value.side) + Number(data.value.vertical)) / 2;
           $("#" + id).css('background', 'linear-gradient(to top,' + tablebuttoncolor + ' ' + avg + '%,#eeecf9)');
         }
         data.continue();
@@ -343,7 +342,7 @@ function techNameGet(id) {
           //技術データの取得、画面表示
           var htmlid = "textdesc" + id;
           $("#itemUsedTechText").append('<div id="' + htmlid + '" name="textdesc" class="text_desc_btn"  onclick="textDescClick(\'' + htmlid + '\',\'' + data.value.techuse + '\')">' + data.value.name + '</div>');
-          avg = (Number(data.value.side) + Number(data.value.vertical)) / 2;
+          var avg = (Number(data.value.side) + Number(data.value.vertical)) / 2;
           $("#" + htmlid).css('background', 'linear-gradient(to top,#1b0d3b ' + avg + '%,#eeecf9)');
         }
         data.continue();
