@@ -16,7 +16,7 @@ function baseInit() {
   $('#plofilAge').text(myage);
   $('#plofilJobs').text(myjobs);
   $('#plofilText').text(myfreetext);
-  $('#freeText').text(freetext);
+  $('#freeText').append(freetext);
   $('.plofilName').css('color', namecolor);
   $('.plofilAgeJobs').css('color', agejobscolor);
   $('.top-button').css('color', topbuttontextcolor);
