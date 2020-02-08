@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>トップページ</title>
+
+  <script type="text/javascript" src="../lib/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../lib/js/jquery.csv.min.js"></script>
+
+  <script type="text/javascript" src="../js/ScreenSettings.js"></script>
+  <script type="text/javascript" src="../js/top.js"></script>
+  <link rel="stylesheet" href="../css/top.css" type="text/css">
+
+  <link rel="stylesheet" href="../lib/css/bootstrap.min.css" type="text/css">
+  <script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="allBackGround">
+    <div id="allBackGround">
+      <canvas id="anime"></canvas>
+
+      <!-- ロゴ、グラフィック表示エリア -->
+      <div class="logoArea">
+        <div class="center top30">
+          <div><img src="../img/logo.png" class="logoImage"></div>
+        </div>
+      </div>
+
+      <!-- プロフィール表示、ボタン表示エリア -->
+      <div class="mainArea">
+        <div class="row">
+          <div class="col-md-1 col-lg-2"></div>
+          <div class="col-md-10 col-lg-8">
+            <div class="descBackGround">
+              <!-- プロフィール -->
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-md-8">
+                  <div class="plofilArea">
+                    <div><img src="../img/profilimg.jpg" class="plofilImage"></div>
+                    <div id="plofilName" class="plofilName"></div>
+                    <span id="plofilAge" class="plofilAgeJobs"></span>
+                    <span id="plofilJobs" class="plofilAgeJobs"></span>
+                    <div id="plofilText" class="plofilText"></div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <!-- ボタン -->
+                  <div class="center">
+                    <div id="techButton" class="top-button"></div>
+                    <div id="pjButton" class="top-button"></div>
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div id="freeText" class="freeText">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

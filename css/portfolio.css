@@ -1,0 +1,427 @@
+/*============================================
+ポートフォリオページCSS
+============================================*/
+
+body {
+  font-family: Helvetica, "游ゴシック", sans-serif;
+}
+
+.allPage {
+  height: 100%;
+  background: #FFFFFF;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/*============ヘッダーエリア============*/
+
+.headerBack {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+.logoImage {
+  width: 200px;
+  height: 40px;
+}
+
+.header-button {
+  padding: 10px;
+  text-align: center;
+  float: left;
+  font-weight: bold;
+  font-size: 14px;
+  height: 40px;
+  width: 33%;
+  display: inline-block;
+  color: #696795;
+  user-select:none;
+}
+
+.header-button:hover {
+  color: #FFFFFF ! important;
+  cursor: pointer;
+}
+
+/*============表エリア============*/
+
+.mainBackGround {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.mainBackGroundScroll {
+  overflow: auto;
+}
+
+.textDispBack {
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: solid 1px #000000;
+}
+
+.textDispBackBig {
+  width: 1000px;
+  height: 500px;
+}
+
+.textDispBackSmall {
+  width: 310px;
+  height: 160px;
+}
+
+.categoryselect {
+  position: absolute;
+  top: -26px;
+  margin-top: 2px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.tableColor {
+  z-index: 10;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+.verticalTableColor {}
+
+.sideTableColor {}
+
+.tableLine {
+  z-index: 20;
+  position: absolute;
+}
+
+.verticalTableLine {
+  top: 0%;
+}
+
+.verticalTableLineBig{
+  border-bottom: solid 40px transparent;
+  border-right: solid 40px transparent;
+}
+
+.verticalTableLineSmall{
+  border-bottom: solid 12px transparent;
+  border-right: solid 12px transparent;
+}
+
+.sideTableLine {
+  right: 0%;
+}
+
+.sideTableLineBig {
+  border-top: solid 45px transparent;
+  border-left: solid 45px transparent;
+}
+
+.sideTableLineSmall {
+  border-top: solid 15px transparent;
+  border-left: solid 15px transparent;
+}
+
+.lineText {
+  display: inline-block;
+  z-index: 30;
+  text-align: center;
+  position: absolute;
+  font-weight: bold;
+}
+
+.verticalText {
+  height: 100%;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  right: 1px;
+}
+
+.verticalTextBig {
+  font-size: 20px;
+}
+
+.verticalTextSmall {
+  font-size: 5px;
+}
+
+.sideText {
+  width: 100%;
+  top: 1px;
+  font-size: 20px;
+}
+
+.sideTextBig {
+  font-size: 20px;
+}
+
+.sideTextSmall {
+  font-size: 6px;
+}
+
+.arrow {
+  display: inline-block;
+  background: radial-gradient(#fffff3, #ff9e50);
+  position: relative;
+  text-align: center;
+  color: #c25722;
+  font-weight: bold;
+}
+
+.arrowSide {
+}
+
+.arrowSideBig {
+  height: 20px;
+  width: 40px;
+  font-size: 14px;
+  top: -2px;
+}
+
+.arrowSideSmall {
+  height: 6px;
+  width: 13px;
+  font-size: 4px;
+  top: -1px;
+}
+
+.arrowRight {
+  left: 5px;
+}
+
+.arrowRightBig:before {
+  position: absolute;
+  content: "";
+  border: 25px solid transparent;
+  border-left: 25px solid #ff9e50;
+  left: 40px;
+  top: -15px;
+}
+
+.arrowRightSmall:before {
+  position: absolute;
+  content: "";
+  border: 8px solid transparent;
+  border-left: 8px solid #ff9e50;
+  left: 13px;
+  top: -5px;
+}
+
+.arrowLeft {
+  right: 5px;
+}
+
+.arrowLeftBig:before {
+  position: absolute;
+  content: "";
+  border: 25px solid transparent;
+  border-right: 25px solid #ff9e50;
+  right: 40px;
+  top: -15px;
+}
+
+.arrowLeftSmall:before {
+  position: absolute;
+  content: "";
+  border: 8px solid transparent;
+  border-right: 8px solid #ff9e50;
+  right: 13px;
+  top: -5px;
+}
+
+.arrowVertical {
+}
+
+.arrowVerticalBig {
+  height: 32px;
+  width: 16px;
+  font-size: 12px;
+  right: 2px;
+}
+
+.arrowVerticalSmall {
+  height: 10px;
+  width: 6px;
+  font-size: 4px;
+  right: -1px;
+}
+
+.arrowtop {
+  bottom: 5px;
+}
+
+.arrowtopBig:before {
+  position: absolute;
+  content: "";
+  border: 22px solid transparent;
+  border-bottom: 22px solid #ff9e50;
+  bottom: 32px;
+  right: -14px;
+}
+
+.arrowtopSmall:before {
+  position: absolute;
+  content: "";
+  border: 8px solid transparent;
+  border-bottom: 8px solid #ff9e50;
+  bottom: 10px;
+  right: -5px;
+}
+
+.arrowBottom {
+  top: 5px;
+}
+
+.arrowBottomBig:before {
+  position: absolute;
+  content: "";
+  border: 22px solid transparent;
+  border-top: 22px solid #ff9e50;
+  top: 32px;
+  left: -14px;
+}
+
+.arrowBottomSmall:before {
+  position: absolute;
+  content: "";
+  border: 8px solid transparent;
+  border-top: 8px solid #ff9e50;
+  top: 10px;
+  left: -5px;
+}
+
+.text_desc_btn {
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.text_desc_btn:hover {
+  cursor: pointer;
+}
+
+.item_size{
+}
+
+.item_sizeBig {
+  font-size: 14px;
+}
+
+.item_sizeSmall {
+  font-size: 6px;
+}
+
+.text_btn {
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 50;
+  position: absolute;
+  display: inline-block;  
+  -webkit-animation: textfadeIn 2s linear 0s 1 normal;
+}
+
+
+
+.text_btn:hover {
+  color: #e98d2a ! important;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@keyframes textfadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes textfadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+/*============説明エリア============*/
+
+.descBackGround {
+  background: #f7f7f7;
+  margin: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  border: 1px solid #cccccc;
+}
+
+.itemLavel {
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.itemText {
+  font-size: 12px;
+  padding: 2px;
+}
+
+.descPop {
+  font-weight: bold;
+  left: 10%;
+  z-index: 10;
+  position: absolute;
+  background: #d8ad6b;
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+  opacity: 0.9;
+  border-radius: 2px;
+  border: double 3px #e76208;
+}
+
+.initDesc {
+  animation-name: initDesc_amime;
+  animation-duration: 2s;
+  transform: translate3d(0, 40px, 0);
+}
+
+@keyframes initDesc_amime {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translate3d(0, 40px, 0);
+  }
+}
+
+.textDescUse {
+  animation-name: textDescUse_amime;
+  animation-duration: 1s;
+  transform: translate3d(0, -40px, 0);
+}
+
+@keyframes textDescUse_amime {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translate3d(0, -40px, 0);
+  }
+}
+
