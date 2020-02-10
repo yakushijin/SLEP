@@ -20,6 +20,10 @@ cp -p /root/server/conf/web.conf /etc/nginx/conf.d/
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf_old
 cp -p /root/server/conf/nginx.conf /etc/nginx/
 
+sed -i -e "s/server_name localhost/server_name $domain/g" /etc/nginx/conf.d/web.conf
+mv /etc/nginx/conf.d/web.conf /etc/nginx/conf.d/${domain}.conf 
+
+
 #ssl設定※一旦オレオレ証明書を設定する
 mkdir -p /etc/nginx/ssl
 chmod 700 /etc/nginx/ssl
