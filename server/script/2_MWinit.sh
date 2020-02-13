@@ -35,12 +35,11 @@ openssl x509 -in cert.csr -days 3650 -req -signkey cert.key > cert.crt
 systemctl restart nginx
 
 #ssl設定※ドメインの登録をしている場合のみ実行する
-#mkdir -p /etc/nginx/temp
 #cd /usr/local
 #git clone https://github.com/certbot/certbot
-#/usr/local/certbot/certbot-auto certonly --webroot -w /etc/nginx/temp -d $domain -m $mymailaddress --agree-tos -n
-#sed -i -e "s/\/etc\/nginx\/ssl\/cert.crt/\/etc\/letsencrypt\/live\/$domain\/cert.pem/g" /etc/nginx/conf.d/web.conf
-#sed -i -e "s/\/etc\/nginx\/ssl\/cert.key/\/etc\/letsencrypt\/live\/$domain\/privkey.pem/g" /etc/nginx/conf.d/web.conf
+#/usr/local/certbot/certbot-auto certonly --webroot -w /var/www -d $domain -m $mymailaddress --agree-tos -n
+#sed -i -e "s/\/etc\/nginx\/ssl\/cert.crt/\/etc\/letsencrypt\/live\/$domain\/cert.pem/g" /etc/nginx/conf.d/$domain.conf
+#sed -i -e "s/\/etc\/nginx\/ssl\/cert.key/\/etc\/letsencrypt\/live\/$domain\/privkey.pem/g" /etc/nginx/conf.d/$domain.conf
 #rm -fR /etc/nginx/ssl
 #systemctl restart nginx
 
