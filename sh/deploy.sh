@@ -1,5 +1,10 @@
 #ウェブディレクトリ初期化
-rm -fR /var/www/*
+rm -fR /var/www/html*
+rm -fR /var/www/js*
+rm -fR /var/www/css*
+rm -fR /var/www/lib*
+rm -fR /var/www/img*
+rm -fR /var/www/text*
 
 cd /var/www/
 
