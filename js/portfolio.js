@@ -333,6 +333,7 @@ function techGet(id) {
 //技術データの取得（実データ取得、画面表示）
 function techNameGet(id) {
   dbOpen().onsuccess = function () {
+    var avg = 0;
     //クライアントDB接続、展開
     let table = readTransaction(event.target.result, techitemlistname).objectStore(techitemlistname);
     table.openCursor().onsuccess = function (event) {
