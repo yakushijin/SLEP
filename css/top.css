@@ -57,7 +57,7 @@ body {
 .logoImage {
   display: inline-block;
   width: 50%;
-  height: 100px;
+  height: 200px;
   opacity: 0.7;
   filter: blur(1px);
 }
