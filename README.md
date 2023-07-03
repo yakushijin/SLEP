@@ -93,5 +93,5 @@ cd sh
 デザインとかレイアウトとか整備して、サーバサイドにDBつけて、認証つけて、web上で設定できるI/F作って、SaaSっぽくする
 
 ↓  
-とりあえずベータ版作って公開した  
-[infoページ](https://www.yakusys.com/notice/skill_visualization_tool.html)
+とりあえずプロトタイプ作って公開した  
+> https://github.com/yakushijin/midgar
